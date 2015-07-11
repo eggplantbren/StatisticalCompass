@@ -7,5 +7,20 @@ def transform(pos, questions):
 	the *available* distance in each direction. The method is ad-hoc and may
 	remain so.
 	"""
-	return pos
+	# Mean and sd of question vectors
+	mu = np.mean(questions.iloc[:,1:].values, axis=0)
+	sd = np.std(questions.iloc[:,1:].values, axis=0)
+
+	pos = ((pos - mu)/sd)/np.sqrt(questions.shape[0])
+	return [pos, mu, sd]
+
+
+if __name__ == '__main__':
+	"""
+	Load the questions and print the mean and sd of the question vectors
+	"""
+	questions = pd.read_csv('questions.csv')
+	[pos, mu, sd] = transform(np.zeros(3), questions)
+	print(mu)
+	print(sd)
 
