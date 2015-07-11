@@ -31,3 +31,5 @@ for i in range(0, questions.shape[0]):
 	# Increment the user's position
 	pos += response*questions.iloc[i, 1:].values
 
+print('Your position in 3D is ' + str(pos) + '.')
+
