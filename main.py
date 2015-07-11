@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from transform import transform
 
 # Load the questions
 questions = pd.read_csv('questions.csv')
@@ -30,6 +31,10 @@ for i in range(0, questions.shape[0]):
 
 	# Increment the user's position
 	pos += response*questions.iloc[i, 1:].values
+
+# Apply some scaling to the position based on how far it was possible
+# to move in each dimension
+pos = transform(pos, questions)
 
 print('Your position in 3D is ' + str(pos) + '.')
 
