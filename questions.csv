@@ -14,5 +14,6 @@
 "I often divide datasets into training data and validation data.", 0.0, 0.8, 0.0
 "Let the data speak for themselves.", -0.9, 0.1, 0.3
 "It is legitimate to say 'the probability is 50% because it either is or it isn't, I just don't know which.", 0.7, 0.0, 0.7
-
+"If someone claims 70% certainty about many statements, about 70% of those statements should be true.", -0.5, 0.0, 0.2
+"Symmetry is an important consideration in statistics.", 0.0, -0.3, 0.8
 
