@@ -5,8 +5,12 @@ The Statistical Compass
 
 LICENCE: MIT
 
-Left - right --> philosophical - pragmatic
-Down - up --> frequentist - bayesian
+x dimension --> frequentist - bayesian
+y dimension --> philosophical - pragmatic
+z dimension --> subjective - objective
 
-Idea for later: Test Bayesians on the objective/subjective spectrum. I don't
-know enough about sub-classes of frequentist.
+Acknowledgements
+================
+
+Peter Green (@pitakakariki)
+
