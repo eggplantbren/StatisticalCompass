@@ -1,4 +1,6 @@
 "question", "direction_x", "direction_y", "direction_z"
 "The law of large numbers is fundamentally related to the meaning of probability.", -1.0, 0.0, 0.0
-
+"If a Bayesian analysis gives the same answer as a frequentist analysis, you cannot say that one is better or worse than the other.", 0.0, 1.0, 0.0
+"It is legitimate to model degrees of belief with probability theory.", 0.7, 0.0, -0.3
+"Any model of degrees of belief that is not probability theory is wrong.", 1.0, 0.5, 0.1
 
