@@ -9,7 +9,7 @@ x dimension: (negative <==> positive) == (frequentist <==> bayesian)
 
 y dimension: (negative <==> positive) == (philosophical <==> pragmatic)
 
-z dimension: (subjective <==> objective) == (subjective <==> objective)
+z dimension: (negative <==> positive) == (subjective <==> objective)
 
 Acknowledgements
 ================
