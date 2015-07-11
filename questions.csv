@@ -1,7 +1,8 @@
-"question", "direction_x", "direction_y", "direction_z"
+"question", "frequentist_bayesian", "philosophical_pragmatic", "subjective_objective"
 "The law of large numbers is fundamentally related to the meaning of probability.", -1.0, 0.0, 0.0
-"If a Bayesian analysis and a frequentist analysis give the same numerical answer, you cannot say that one is better or worse than the other.", 0.0, 1.0, 0.0
+"If a Bayesian analysis and a frequentist analysis give the same numerical answer, you cannot say that one is better or worse than the other.", 0.0, -1.0, 0.0
 "It is legitimate to model degrees of belief with probability theory.", 0.7, 0.0, -0.3
-"Any model of degrees of belief that is not probability theory is wrong.", 1.0, 0.5, 0.1
+"Any model of degrees of belief that is not probability theory is wrong.", 1.0, -0.5, 0.1
 "It is possible to experimentally verify that the value of a probability is correct.", -0.7, 0.0, 0.7
+"Probabilities based on subjective intraspection have no role in science.", -0.5, 0.0, 0.8
 
