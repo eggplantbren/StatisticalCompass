@@ -12,6 +12,8 @@ def transform(pos, questions):
 	sd = np.std(questions.iloc[:,1:].values, axis=0)
 
 	pos = ((pos - mu)/sd)/np.sqrt(questions.shape[0])
+	pos = np.sign(pos)*np.sqrt(np.abs(pos))	# Take square root for moderation
+
 	return [pos, mu, sd]
 
 

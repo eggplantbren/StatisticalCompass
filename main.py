@@ -21,7 +21,7 @@ for i in range(0, questions.shape[0]):
 		print('# WARNING: Very uninfluential question.')
 
 	# Print the question
-	print('\nQuestion {k}:\n'.format(k=i+1))
+	print('\nQuestion {k}/{n}:\n'.format(k=i+1, n=questions.shape[0]))
 	print(questions.iloc[i, 0] + '\n')
 
 	# Get the user's response
