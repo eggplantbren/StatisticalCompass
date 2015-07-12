@@ -34,6 +34,7 @@ for i in range(0, questions.shape[0]):
 
 # Apply some scaling to the position based on how far it was possible
 # to move in each dimension
+print(pos)
 pos = transform(pos, questions)[0]
 
 print('Your position in 3D is ' + str(pos) + '.')

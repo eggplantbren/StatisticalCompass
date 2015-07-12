@@ -18,11 +18,12 @@ def transform(pos, questions):
 
 	# New method
 	most_extreme = 2.*np.sum(np.abs(questions.iloc[:,1:].values), axis=0)
-	pos = (pos + most_extreme)/(2.*most_extreme)	# \in [0, 1]
-	pos = pos**2				# Nonlinear transformation using a power
-	pos = 10.*pos - 5.			# Transform to [-5, 5]
+	# pos is in [-most_extreme, most_extreme]
+	result = pos/most_extreme		# \in [-1, 1]
+	#result = result**3				# Nonlinear transformation if desired (must be odd)
+	result = 5.*result				# Transform to [-5, 5]
 
-	return [pos, most_extreme]
+	return [result, most_extreme]
 
 
 if __name__ == '__main__':
@@ -30,6 +31,6 @@ if __name__ == '__main__':
 	Load the questions and print the mean and sd of the question vectors
 	"""
 	questions = pd.read_csv('questions.csv')
-	[pos, most_extreme] = transform(np.zeros(3), questions)
-	print(most_extreme)
+	[pos, most_extreme] = transform(np.array([14.2, -3.1, -1.4]), questions)
+	print(pos)
 
