@@ -5,14 +5,23 @@ The Statistical Compass
 
 LICENCE: MIT
 
-x dimension: (negative <==> positive) == (frequentist <==> bayesian)
+This quiz measures your statistical attitudes and places you in a three
+dimensional space.
 
-y dimension: (negative <==> positive) == (philosophical <==> pragmatic)
-
-z dimension: (negative <==> positive) == (subjective <==> objective)
+* x dimension: (negative <==> positive) == (frequentist <==> bayesian)
+* y dimension: (negative <==> positive) == (philosophical <==> pragmatic)
+* z dimension: (negative <==> positive) == (subjective <==> objective)
 
 Acknowledgements
 ================
 
-Peter Green (@pitakakariki)
+Thanks to the following people for their suggestions:
+
+* Peter Green (**@pitakakariki**)
+* Peter O'Malley (**@pjjomalley**)
+
+Dependencies
+============
+
+You'll need the Python packages *NumPy* and *pandas*.
 
