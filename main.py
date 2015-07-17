@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd
 from transform import transform
 
@@ -34,8 +35,23 @@ for i in range(0, questions.shape[0]):
 
 # Apply some scaling to the position based on how far it was possible
 # to move in each dimension
-print(pos)
 pos = transform(pos, questions)[0]
 
 print('Your position in 3D is ' + str(pos) + '.')
+
+# Plot two of the three coordinates
+plt.rc("font", size=20, family="serif", serif="Computer Sans")
+plt.rc("text", usetex=True)
+
+plt.figure(figsize=(8, 8))
+plt.plot(pos[0], pos[1], 'ro', markersize=10)
+plt.axis([-5., 5., -5., 5.])
+plt.gca().set_xticks([])
+plt.gca().set_yticks([])
+plt.grid(True)
+plt.axhline(0., color='k', linewidth=2)
+plt.axvline(0., color='k', linewidth=2)
+plt.xlabel(r'Frequentist <--------> Bayesian')
+plt.ylabel(r'Philosophical <--------> Pragmatic')
+plt.show()
 

@@ -17,11 +17,12 @@ Acknowledgements
 
 Thanks to the following people for their suggestions:
 
+* Federica Bianco (**@fedhere**)
 * Peter Green (**@pitakakariki**)
 * Peter O'Malley (**@pjjomalley**)
 
 Dependencies
 ============
 
-You'll need the Python packages *NumPy* and *pandas*.
+You'll need the Python packages *NumPy*, *matplotlib*, and *pandas*.
 
