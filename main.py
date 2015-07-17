@@ -26,8 +26,8 @@ for i in range(0, questions.shape[0]):
 
 	# Get the user's response
 	response = None	# Placeholder value
-	while response < -2. or response > 2.:
-		response = input(input_text)
+	while response is None or response < -2. or response > 2.:
+		response = float(input(input_text))
 
 	# Increment the user's position
 	pos += response*questions.iloc[i, 1:].values
