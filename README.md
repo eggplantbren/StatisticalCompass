@@ -1,7 +1,7 @@
 The Statistical Compass
 =======================
 
-(c) 2015 Brendon J. Brewer
+(c) 2015 Brendon J. Brewer, Federica Bianco
 
 LICENCE: MIT
 
